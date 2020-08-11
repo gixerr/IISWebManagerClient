@@ -1,0 +1,25 @@
+.navigation {
+    max-width: 100%;
+    min-width: 585px;
+    padding: 10px;
+    background: #666;
+    height: 50px;
+    &__link {
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 24px;
+        color: white;
+        &:hover {
+            border-bottom: solid red;
+            border-radius: 8px;
+            text-shadow: 2px 2px #000;
+        }
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 585px;
+    }
+
+}
