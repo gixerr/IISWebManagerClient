@@ -1,0 +1,27 @@
+.navigation {
+    padding: 10px;
+    background: $darkGrey;
+    height: 50px;
+    &__link {
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        font-size: 24px;
+        color: $lightGrey;
+        padding: 3px;
+        &:hover {
+            border-bottom: solid 3px red;
+            border-radius: 8px;
+            text-shadow: 2px 2px #000;
+            color: $white;
+        }
+    }
+    &__links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 24px;
+        margin: 0 auto;
+        width: 30%;
+    }
+
+}
