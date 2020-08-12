@@ -1,25 +1,27 @@
 .navigation {
-    max-width: 100%;
-    min-width: 585px;
     padding: 10px;
-    background: #666;
+    background: $darkGrey;
     height: 50px;
     &__link {
         font-weight: bold;
         text-decoration: none;
+        text-align: center;
         font-size: 24px;
-        color: white;
+        color: $lightGrey;
+        padding: 3px;
         &:hover {
-            border-bottom: solid red;
+            border-bottom: solid 3px red;
             border-radius: 8px;
             text-shadow: 2px 2px #000;
+            color: $white;
         }
     }
     &__links {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 24px;
         margin: 0 auto;
-        width: 585px;
+        width: 30%;
     }
 
 }
