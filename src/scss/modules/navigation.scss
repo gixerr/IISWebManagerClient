@@ -5,9 +5,9 @@
     &__link {
         font-weight: bold;
         text-decoration: none;
-        text-align: center;
         font-size: 24px;
         color: $lightGrey;
+        margin: 0 16px;
         padding: 3px;
         &:hover {
             border-bottom: solid 3px red;
@@ -17,9 +17,8 @@
         }
     }
     &__links {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 24px;
+        display: flex;
+        justify-content: center;
         margin: 0 auto;
         width: 30%;
     }
